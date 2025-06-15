@@ -85,8 +85,8 @@ def load_data(city, month, day):
     """
    # load data file into pandas DataFrame
     df = pd.read_csv(CITY_DATA[city])
-   # Load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+
+
         
    # Convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -173,16 +173,17 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_duration = np.sum(df['Trip Duration'])
-    print('Total Travel Time (numpy):', total_duration, 'seconds')
-    print('Total Travel Time (formatted):', time.strftime('%H:%M:%S', time.gmtime(total_duration)))
+    # Convert total_duration from seconds into hours, minutes, and seconds for better readability
+    hours_total, remainder_total = divmod(total_duration, 3600)
+    minutes_total, seconds_total = divmod(remainder_total, 60)
+    print(f'Total Travel Time: {int(hours_total)}h {int(minutes_total)}m {int(seconds_total)}s')
 
     # display mean travel time
     mean_duration = np.mean(df['Trip Duration'])
-    print('Mean Travel Time (numpy):', mean_duration, 'seconds')
-    print('Mean Travel Time (formatted):', time.strftime('%H:%M:%S', time.gmtime(mean_duration)))
-
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    # Convert mean_duration from seconds into hours, minutes, and seconds for better readability
+    hours_mean, remainder_mean = divmod(mean_duration, 3600)
+    minutes_mean, seconds_mean = divmod(remainder_mean, 60)
+    print(f'Mean Travel Time: {int(hours_mean)}h {int(minutes_mean)}m {int(seconds_mean)}s')
 
 
 # In[24]:

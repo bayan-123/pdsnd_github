@@ -1,5 +1,3 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 # US Bikeshare Data Exploration
 
 ## Project Overview
@@ -38,4 +36,5 @@ The script provides the following statistical insights based on user-selected fi
 You can install the required Python libraries using pip:
 ```bash
 pip install pandas numpy
+
 

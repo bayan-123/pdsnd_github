@@ -85,8 +85,8 @@ def load_data(city, month, day):
     """
    # load data file into pandas DataFrame
     df = pd.read_csv(CITY_DATA[city])
-   # Load data file into a dataframe
-    df = pd.read_csv(CITY_DATA[city])
+
+
         
    # Convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])

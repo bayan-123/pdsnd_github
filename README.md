@@ -37,4 +37,7 @@ You can install the required Python libraries using pip:
 ```bash
 pip install pandas numpy
 
+## How to Contribute
 
+Contributions are welcome! If you find any issues or have suggestions for improvements,
+please feel free to open an issue or submit a pull request on the GitHub repository.

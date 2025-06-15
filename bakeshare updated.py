@@ -28,13 +28,17 @@ CITY_DATA = {
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+        Asks the user to specify a city, month, and day for data analysis.
 
-    Returns:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    """
+        This function guides the user through selecting a city from a predefined
+        list, and then optionally filtering by a specific month (January to June)
+        or day of the week. Input is validated to ensure it matches available options.
+
+        Returns:
+            (str) city - Name of the chosen city (e.g., 'chicago').
+            (str) month - Name of the chosen month or 'all' for no month filter.
+            (str) day - Name of the chosen day or 'all' for no day filter.
+        """
     print('Hello! Let\'s explore some US bikeshare data!')
 
     # Valid options
@@ -268,25 +272,25 @@ if __name__ == "__main__":
 	main()
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
 
 
 
 
 
-# In[ ]:
+
+
+
+
 
 
 
